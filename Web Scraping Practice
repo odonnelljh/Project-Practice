@@ -1,0 +1,21 @@
+#Practice for web scraping
+
+#module allows HTTPS requests
+import requests
+
+
+#Get HTML of page
+res = requests.get('https://codedamn.com')
+
+print(res.text)
+print(res.status_code)
+
+
+import urllib.request
+import time
+from bs4 import BeautifulSoup
+
+url = 'https://google.co.uk'
+response = requests.get(url)
+
+print(response)
